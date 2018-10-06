@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/logo1">
+
+        <TextView
+            android:id="@+id/textViewId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_ID"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Enter a ID @android:string/emptyPhoneNumber"
+            android:inputType="textPersonName"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewId" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Name"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewId"/>
+
+        <EditText
+            android:id="@+id/editText_name"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="96dp"
+            android:ems="10"
+            android:hint="Enter your Name"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Department"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <EditText
+            android:id="@+id/editText_department"
+            android:layout_width="202dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="96dp"
+            android:ems="10"
+            android:hint="Enter you Department"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/department"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/department" />
+
+        <TextView
+            android:id="@+id/university"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="University"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/department" />
+
+        <EditText
+            android:id="@+id/editText_university"
+            android:layout_width="202dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="96dp"
+            android:ems="10"
+            android:hint="Enter you University"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/university"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/university"
+             />
+
+        <TextView
+            android:id="@+id/session"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="Session"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/university"
+            />
+
+        <EditText
+            android:id="@+id/editText_session"
+            android:layout_width="202dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="96dp"
+            android:ems="10"
+            android:hint="Enter you session"
+            android:textSize="15sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/session"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/session"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:textSize="20dp"
+            android:text="Gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/session"
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/Radiogroupgender"
+            android:layout_width="206dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/gender"
+            app:layout_constraintTop_toBottomOf="@+id/editText_session">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Female"
+                />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="76dp"
+            android:text="Add DATA"
+            android:textSize="20sp"
+            android:background="#5fb5df"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/session" />
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="76dp"
+            android:background="#96e60b"
+            android:text="VIEW ALL"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toEndOf="@+id/button_add"
+            app:layout_constraintTop_toBottomOf="@+id/session" />
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            android:textSize="20sp"
+            android:text="UPDATE"
+            android:background="#23a41e"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="116dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="48dp"
+            android:text="DELETE"
+            android:background="#dd3131"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button_update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/button_update" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
